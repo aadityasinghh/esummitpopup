@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+     <div class="popup">
+         <div class="contentBox">
+             <div class="close"></div>
+             <div class="imgBx">
+                 <img src="endeavourlogo.jpeg">
+                 </div>
+                 <div class="content">
+                     <div>
+                     <h3>ENDEAVOUR 2021</h3>
+                     <h2>12th & 13th june</h2>
+                     <p> TO PARTICIPATE AND TO KNOW MORE ABOUT IT CLICK BELOW</p>
+                     <a href="http://endeavour-kiet.in">click here</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- automatic show popup after 2seconds-->
+
+     <script>
+         const popup = document.querySelector('.popup');
+         const close = document.querySelector('.close');
+
+         window.onload = function(){
+             setTimeout(function(){
+                 popup.style.display = "block"
+
+                 // time delay
+             }, 1000)
+         }
+
+       close.addEventListener('click', () => {
+           popup.style.display = "none";
+       })
+
+     </script>
+</body>
+</html>
